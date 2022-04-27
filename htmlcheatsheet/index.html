@@ -4,10 +4,135 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML Cheat Sheet</title>
     <link >
 </head>
 <body>
-    suuup
+    <a href="blog.html">Go To Blog</a>
+    <!-- Headings -->
+    <h1>Heading One</h1>
+    <h2>Heading Two</h2>
+    <h3>Heading Three</h3>
+    <h4>Heading Four</h4>
+    <h5>Heading Five</h5>
+    <h6>Heading Six</h6>
+
+    <!-- Paragraphs -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet earum 
+        accusamus quae facilis modi nobis! <Strong>Voluptatum id voluptatibus</Strong>, tempore 
+        qui eveniet quos iusto <em>corporis cupiditate</em> eum aperiam debitis. Similique!
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet, <a href="http://google.com" target="_blank">consectetur adipisicing elit</a>. Voluptate 
+        magni fuga veniam vitae, facere nostrum rerum fugit, iste sunt ipsam 
+        voluptatem vero! Optio adipisci quisquam velit non nobis dolorum exercitationem?
+    </p>
+
+    <!-- Lists -->
+    <ul>
+        <li> List Item 1</li>
+        <li> List Item 2</li>
+        <li> List Item 3</li>
+        <li> List Item 4</li>
+    </ul>
+
+    <ol>
+        <li> List Item 1</li>
+        <li> List Item 2</li>
+        <li> List Item 3</li>
+        <li> List Item 4</li>
+    </ol>
+
+    <!-- Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Wilson</td>
+                <td>wncoding@gmail.com</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>JohnSilver@gmail.com</td>
+                <td>37</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <hr>
+    <br>
+    <!-- Forms -->
+    <form action="process.php" method="POST">
+        <div>
+            <label>First Name</label>
+            <input type="text" name="firstName" placeholder="Enter first name">
+        </div>
+        <br>    <!-- Would us CSS to add padding but, HTML study purposes just break-->
+        <div>
+            <label>Last Name</label>
+            <input type="text" name="lastName">
+        </div>
+        <br>
+        <div>
+            <label>Email</label>
+            <input type="email" name="email">
+        </div>
+        <br>
+        <div>
+            <label>Message</label>
+            <textarea name="message"></textarea>
+        </div>
+        <br>
+        <div>
+            <label>Gender</label>
+            <select name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label>Age</label>
+            <input type="number" name="age" value="30">
+        </div>
+        <br>
+        <div>
+            <label>Date</label>
+            <input type="date" name="date">
+        </div>
+        <br>
+        <input type="submit" name="submit" value="Submit">
+
+    </form>
+    <br>
+    <!-- Button -->
+    <button>Click Me</button>
+    <br>
+    <!-- Image -->
+    <a href="Jackie2.jpg">
+    <img src="Jackie2.jpg" alt="My Dog Jackie" width="300"> <!-- Lost my dog 1 week ago at time of writing. R.I.P Jackie 2007-20/04/2022--> <!-- And now im sad again is putting his photo in a cheat sheet a bad idea?-->
+    </a>
+
+    <!-- Quotations -->
+    <blockquote cite="http://traversymedia.com">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus excepturi consequatur assumenda commodi cumque rerum sequi ab tenetur consectetur iste! Nam quod necessitatibus perferendis excepturi dolorum, velit commodi ipsam quas?
+    </blockquote>
+
+    <p>The <abbr title="World Wide Web">WWW</abbr> is awesome</p>
+
+    <p><cite>HTML crash course</cite> by Brad Traversy</p>
+
+    <div style="margin-top: 200px"></div>
 </body>
 </html>
