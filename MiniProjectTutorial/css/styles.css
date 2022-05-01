@@ -141,6 +141,7 @@ form{
     margin: 0% auto;
     display: flex;
     flex-direction: column;
+    padding: 0 24px;
 }
 
 input,textarea{
@@ -163,7 +164,7 @@ footer{
 }
 
 .footer__logo{
-    max-width: 480px;
+    max-width: 460px;
     margin-bottom: 16px;
 }
 
@@ -173,4 +174,66 @@ footer{
 
 .footer__link{
     padding: 0 16px;
+}
+
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+@media (max-width: 728px){
+    .row{
+        flex-direction: column;
+    }
+
+    .home__description{
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home__description--button{
+        max-width: 240px;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 60px;
+    }
+
+    .subheader{
+        text-align: center;
+        font-size: 28px;
+    }
+
+        /* Hiding navbar for this tutorials purposes*/
+    ul{
+        display: none;
+    }
+
+    .section__description--wrapper{
+        width: 100%;
+    }
+
+    .about__image--wrapper{
+        width: 100%;
+    }
+
+    #discord .row{
+        flex-direction: column-reverse;
+    }
+
+    footer{
+        padding:48px 24px;
+    }
+
+    .footer__logo{
+        max-width: 360px;
+    }
+
+    .footer__link{
+        padding: 0 4px;
+        font-size: 18px;
+    }
+
+    .footer__links{
+        margin-bottom: 24px;
+    }
 }
