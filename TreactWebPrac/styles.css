@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter, system-ui;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(36,62,99);
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+
+.purple {
+    color: rgba(80,17,204);
+}
+
+.btn {
+    border: none;
+    background-color: rgba(80,17,204);;
+    color: white;
+    padding: 12px 32px;
+    border-radius: 24px;
+    font-size: 14px;
+    cursor: not-allowed;
+}
+
+.row {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+.nav__logo--wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo {
+    width: 40px;
+    margin-right: 8px;
+}
+
+.logo__text {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.nav__links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav__link {
+    margin: 0px 20px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.nav__link:nth-child(4) {
+    margin-right: 56px;
+}
+
+/* LANDING */
+
+#landing {
+    padding: 16px;
+}
+
+.landing__wrapper {
+    display: flex;
+    padding: 40px 0;
+}
+
+.landing__description {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section__title {
+    font-size: 48px;
+}
+
+.section__description {
+    margin: 24px 0;
+    font-size: 18px;
+    color: rgba(36,62,99);
+}
+
+.landing__input--wrapper{
+    position: relative;
+    height: 64px;
+    width: 80%;
+}
+
+.landing__email--input{
+    padding: 20px 192px 20px 32px;
+    border-radius: 32px;
+}
+
+.landing__email--btn {
+    position: absolute;
+    top: 8px;
+    right: -16px;
+}
+
+.landing__img {
+    width: 60%;
+}
+
+.cust__strip {
+    margin-top: 80px;
+}
+
+.cust__strip--text {
+    color : rgba(160,174,192)
+}
+
+.cust__strip--img {
+    margin-top: 16px;
+}
