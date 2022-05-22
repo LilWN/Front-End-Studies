@@ -9,7 +9,7 @@
 
 a {
     text-decoration: none;
-    color: rgba(36,62,99);
+    color: rgba(36, 62, 99);
 }
 
 li {
@@ -21,12 +21,12 @@ img {
 }
 
 .purple {
-    color: rgba(80,17,204);
+    color: rgba(80, 17, 204);
 }
 
 .btn {
     border: none;
-    background-color: rgba(80,17,204);
+    background-color: rgba(80, 17, 204);
     color: white;
     padding: 12px 32px;
     border-radius: 24px;
@@ -114,17 +114,17 @@ img {
 .section__description {
     margin: 28px 0;
     font-size: 18px;
-    color: rgba(36,62,99);
+    color: rgba(36, 62, 99);
     line-height: 28px;
 }
 
-.landing__input--wrapper{
+.landing__input--wrapper {
     position: relative;
     height: 64px;
     width: 432px;
 }
 
-.landing__email--input{
+.landing__email--input {
     padding: 20px 192px 20px 32px;
     border-radius: 32px;
     border-color: rgba(160, 174, 192, 0.637);
@@ -138,7 +138,7 @@ img {
 
 .landing__email--input:focus {
     outline: none;
-    border-color: rgba(80,17,204);
+    border-color: rgba(80, 17, 204);
 }
 
 .landing__email--input:hover {
@@ -162,7 +162,7 @@ img {
 }
 
 .cust__strip--text {
-    color : rgba(160,174,192);
+    color: rgba(160, 174, 192);
 }
 
 .cust__strip--img {
@@ -195,7 +195,7 @@ h5 {
 
 h2 {
     font-size: 3rem;
-    color: rgba(36,62,99);
+    color: rgba(36, 62, 99);
     letter-spacing: 0.025em
 }
 
@@ -258,6 +258,10 @@ h2 {
 
 /* QUALITY WORK */
 
+#quality__work {
+    padding: 80px 0;
+}
+
 .qw__wrapper {
     display: flex;
     justify-content: space-between;
@@ -276,12 +280,79 @@ h2 {
     margin: 16px 0 32px 0;
 }
 
-.qw__img {
+.qw__img--wrapper {
     max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.qw__img {
     border-style: solid;
     border-color: #e5e7eb;
     border-width: 1px;
+}
+
+/* STEPS */
+
+#steps {
+    padding: 80px 0;
+}
+
+.steps__wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.steps__img--wrapper {
+    width: 50%;
+    max-width: 640px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+
+.steps__column {
+    padding: 24px 0;
+}
+
+.step__container {
+    display: flex;
+    margin-top: 32px;
+}
+
+.step__number {
+    color: rgb(203, 213, 224);
+    font-size: 36px;
+    font-weight: 600
+}
+
+.step__description {
+    margin-left: 24px;
+    max-width: 320px;
+}
+
+.step__title {
+    color: rgb(36, 62, 99);
+    font-size: 20px;
+    font-weight: 600
+}
+
+.step__para {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    color: rgb(113, 128, 150);
+    margin-top: 12px;
+}
+
+.svg__icon {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    background-color: rgb(107, 195, 132);
+    border-radius: 999px;
 }
