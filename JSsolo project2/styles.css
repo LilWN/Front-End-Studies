@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lato:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    font-family: Inter, system-ui;
+    font-style: normal;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white
+}
+
+body {
+    padding: 16px;
+    background-color: #1F2937;
+}
+
+.row {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.green {
+    font-family: inherit;
+    color: #55F991;
+}
+
+h1 {
+    font-family: Karla;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 32px;
+}
+
+p {
+    font-family: inherit;
+    font-style: inherit;
+    color: #D5D4D8;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 12px;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 17px 9px 15px;
+    border: none;
+    border-radius: 6px;
+    background: #10B981;
+    margin-top: 36px;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+button:active {
+    transform: translateY(1px);
+    background: #0fa774;
+}
+
+.inputs__wrapper {
+    display: flex;
+}
+
+.pw__length--input {
+    height: 32px;
+    margin-top: 40px;
+    margin-left: 40px;
+    padding: 9px 0;
+    width: 100px;
+    background: #273549;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+    max-width: 360px;
+    margin: 28px auto;
+    background-color: #2F3E53;
+}
+
+/* BOTTOM */
+
+.generated__passwords {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.password {
+    margin-bottom: 16px;
+    width: 48%;
+    height: 39px;
+    background: #273549;
+    border-radius: 6px;
+    border: none;
+
+    text-align: center;
+    color: #55F991;
+}
+
+input::placeholder {
+    color: #202B3C;
+    font-size: 24px;
+}

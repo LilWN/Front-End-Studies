@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Solo Prac</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <main>
+        <section class="top row">
+            <h1 class="title">Generate a <span class="green">random password</span></h1>
+            <p>Never use an insecure password again.</p>
+            <div class="inputs__wrapper">
+                <button onclick="generatePassword()"><img src="./assets/Icon.png"></i>&nbsp&nbspGenerate
+                    Password</button>
+                <input type="number" class="pw__length--input" alt="0" max="12" min="6">
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section class="bottom row">
+            <div class="generated__passwords">
+                <input type="text" id="password1" class="password" onclick="copyClipboard('password1')" placeholder="&#8226;&#8226;&#8226;">
+                <input type="text" id="password2" class="password" onclick="copyClipboard('password2')" placeholder="&#8226;&#8226;&#8226;">
+                <input type="text" id="password3" class="password" onclick="copyClipboard('password3')" placeholder="&#8226;&#8226;&#8226;">
+                <input type="text" id="password4" class="password" onclick="copyClipboard('password4')" placeholder="&#8226;&#8226;&#8226;">
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
