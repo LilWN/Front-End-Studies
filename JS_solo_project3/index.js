@@ -5,34 +5,11 @@ const weedsBtnEl = document.getElementById("weeds_btn-el")
 const taskListEl = document.querySelector(".task__list")
 const totalPriceEl = document.querySelector(".total__price")
 
-let removeBtnEl = []
 let washAdded = false
 let mowAdded = false
 let weedsAdded = false
 let totalPrice = 0;
 let taskArray = []
-
-
-washBtnEl.addEventListener("click", function () {
-    if (washAdded === false) {
-        addTask("Wash Car", 10, "washRemoveBtn")
-        washAdded = true
-    }
-})
-
-mowBtnEl.addEventListener("click", function () {
-    if (mowAdded === false) {
-        addTask("Mow Lawn", 20, "mowRemoveBtn")
-        mowAdded = true
-    }
-})
-
-weedsBtnEl.addEventListener("click", function () {
-    if (weedsAdded === false) {
-        addTask("Pull Weeds", 30, "weedsRemoveBtn")
-        weedsAdded = true
-    }
-})
 
 function renderTasks(array) {
     let str = ""
@@ -45,7 +22,7 @@ function renderTasks(array) {
     }
     taskListEl.innerHTML = str
     let removeListingBtns = document.getElementsByClassName('remove__list')
-    
+
     for (let i = 0; i < removeListingBtns.length; i++) {
         let button = removeListingBtns[i]
         button.addEventListener('click', function(event) {
@@ -72,14 +49,29 @@ function updatePrice() {
         let task = tasks[i]
         let priceEl = task.getElementsByClassName('service__price')[0]
         let price = parseFloat(priceEl.textContent.replace('$', ''))
-        console.log(price)
+
         totalPrice += price
     }
-
     totalPriceEl.innerHTML = `$${totalPrice}`
 }
 
-function removeTask() {
-    console.log("REMOVETASK()")
-    
-}
+washBtnEl.addEventListener("click", function () {
+    if (washAdded === false) {
+        addTask("Wash Car", 10, "washRemoveBtn")
+        washAdded = true
+    }
+})
+
+mowBtnEl.addEventListener("click", function () {
+    if (mowAdded === false) {
+        addTask("Mow Lawn", 20, "mowRemoveBtn")
+        mowAdded = true
+    }
+})
+
+weedsBtnEl.addEventListener("click", function () {
+    if (weedsAdded === false) {
+        addTask("Pull Weeds", 30, "weedsRemoveBtn")
+        weedsAdded = true
+    }
+})
