@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Inter, system-ui;
+    font-style: normal;
+}
+
+body {
+    background: #1F2937;
+}
+
+p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #F5F5F5;
+}
+
+.row {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.divider {
+    width: 100%;
+    border: 1px solid #C3C6DB;
+    margin-top: 32px;
+}
+
+.grey {
+    color: #918E9B;
+}
+
+#heading {
+    background: #3A69D2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 190px;
+    padding: 32px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 800;
+    Line-height: 40px;
+    letter-spacing: -0.02em;
+}
+
+.sub__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 12px;
+}
+
+/* SERVICES */
+
+main {
+    padding: 32px;
+}
+
+.btn__list {
+    display: flex;
+}
+
+.btn {
+    width: calc(100% / 3);
+    border: none;
+    border-radius: 8px;
+    color: #4A4E74;
+    margin: 0 12px;
+    height: 45px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+/* TASKS */
+
+h3 {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    color: #D5D4D8;
+}
+
+.task__wrapper {
+    margin-top: 40px;
+}
+
+.task__sub-titles,
+.task {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task {
+    margin-top: 32px;
+}
+
+.service__name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.service__price {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 20px;
+}
+
+/* CHECKOUT */
+
+.checkout__sub-titles {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.note {
+    margin-top: 16px;
+}
+
+.total__price {
+    display: flex;
+    justify-content: end;
+    color: #F5F5F5;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 32px;
+    margin-top: 16px;
+}
+
+#btn__invoice {
+    background: #3A69D2;
+    color: white;
+    width: 100%;
+    margin: 48px 0 0 0;
+}
+
+#btn__invoice:hover {
+    background-color: #3a6ad2de;
+}

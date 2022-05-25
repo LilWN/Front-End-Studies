@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Solo Project 3</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header id="heading">
+        <div class="row">
+            <h1 class="title">Invoice creator</h1>
+            <h2 class="sub__title">Thanks for choosing GoodCorp, LLC</h2>
+        </div>
+    </header>
+    <main>
+        <section id="services">
+            <div class="row">
+                <div class="btn__list">
+                    <button id="wash_btn-el" class="btn">Wash Car: $10</button>
+                    <button id="mow_btn-el" class="btn">Mow Lawn: $20</button>
+                    <button id="weeds_btn-el" class="btn">Pull Weeds: $30</button>
+                </div>
+
+                <div class="task__wrapper">
+                    <div class="task__sub-titles">
+                        <h3 class="section__title">TASK</h3>
+                        <h3 class="section__title">TOTAL</h3>
+                    </div>
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="divider row"></div>
+        <section id="checkout">
+            <div class="row">
+                <div class="checkout__sub-titles">
+                    <div>
+                        <h3>NOTES</h3>
+                        <p class="note">We accept cash, credit card, or Paypal</p>
+                    </div>
+                    <div>
+                        <h3>TOTAL AMOUNT</h3>
+                        <div class="total__price">$0</div>
+                    </div>
+                </div>
+                <button id="btn__invoice" class="btn"><img src="./assets/mail_icon.png" alt="">&nbsp;Send
+                    Invoice</button>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
