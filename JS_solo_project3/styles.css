@@ -120,6 +120,19 @@ h3 {
     line-height: 20px;
 }
 
+.remove__list {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 20px;
+    position: absolute;
+    margin-left: 20px;
+}
+
+.remove__list:active {
+    transform: translateY(1px);
+    color: #918e9b97;
+}
+
 /* CHECKOUT */
 
 .checkout__sub-titles {
