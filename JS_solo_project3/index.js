@@ -8,7 +8,6 @@ const totalPriceEl = document.querySelector(".total__price")
 let washAdded = false
 let mowAdded = false
 let weedsAdded = false
-let totalPrice = 0;
 
 function addTask(serviceName, servicePrice, removeBtnId) {
     taskListEl.innerHTML +=
@@ -23,7 +22,6 @@ function addTask(serviceName, servicePrice, removeBtnId) {
         let button = removeListingBtns[i]
         button.addEventListener('click', function(event) {
             let buttonClicked = event.target
-            console.log(buttonClicked)
             if (buttonClicked === document.getElementById("washRemoveBtn")) {
                 washAdded = false
             } 
@@ -42,7 +40,7 @@ function addTask(serviceName, servicePrice, removeBtnId) {
 }
 
 function updatePrice() {
-    totalPrice = 0
+    let totalPrice = 0
 
     let taskListContainer = document.getElementsByClassName('.task__list')[0]
     let tasks = document.getElementsByClassName('task')
