@@ -9,34 +9,35 @@ let washAdded = false
 let mowAdded = false
 let weedsAdded = false
 let totalPrice = 0;
-let taskArray = []
 
-function renderTasks(array) {
-    let str = ""
-    for (let i = 0; i < array.length; i++) {
-        str +=
+function addTask(serviceName, servicePrice, removeBtnId) {
+    taskListEl.innerHTML +=
             `<li class="task">
-        <div class="service__name">${array[i].name}<span id=${array[i].btnId} class="remove__list grey">remove</span></div>
-        <div class="service__price"><span class="grey">$</span>${array[i].price}</div>
+        <div class="service__name">${serviceName}<span id=${removeBtnId} class="remove__list grey">remove</span></div>
+        <div class="service__price"><span class="grey">$</span>${servicePrice}</div>
     </li>`
-    }
-    taskListEl.innerHTML = str
+    
     let removeListingBtns = document.getElementsByClassName('remove__list')
 
     for (let i = 0; i < removeListingBtns.length; i++) {
         let button = removeListingBtns[i]
         button.addEventListener('click', function(event) {
             let buttonClicked = event.target
+            console.log(buttonClicked)
+            if (buttonClicked === document.getElementById("washRemoveBtn")) {
+                washAdded = false
+            } 
+            else if (buttonClicked === document.getElementById("mowRemoveBtn")) {
+                mowAdded = false
+            }
+            else if (buttonClicked === document.getElementById("weedsRemoveBtn")) {
+                weedsAdded = false
+            }
             buttonClicked.parentElement.parentElement.remove()
-            taskArray.splice(i)
             updatePrice()
         })
     }
-}
 
-function addTask(serviceName, servicePrice, removeBtnId) {
-    taskArray.push({ name: serviceName, price: servicePrice, btnId: removeBtnId })
-    renderTasks(taskArray)
     updatePrice()
 }
 
