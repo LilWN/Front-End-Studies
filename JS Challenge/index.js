@@ -128,4 +128,42 @@ function sortHighToLowObj(arr) {
     return arr.sort((a, b) => b.price - a.price)
 }
 
-console.log()
+async function postsByUser(uid) {
+    const promise = await fetch("https://jsonplaceholder.typicode.com/posts");
+
+    const result = await promise.json()
+
+    const post = result.filter(element => element.userId === uid)
+
+    console.log(result)
+
+    /* console.log(post) */
+}
+
+async function firstSixIncomplete() {
+    /* let sixIncomplete = []
+    let count = 0
+    let i = 0 */
+
+    const promise = await fetch("https://jsonplaceholder.typicode.com/todos")
+
+    const result = await promise.json()
+
+    const incompleteTasks = result.filter(elem => !elem.completed).slice(0, 6)
+
+    console.log(incompleteTasks)
+
+    /* while (count < 6) {
+        if (result[i].completed === false) {
+            sixIncomplete.push(result[i])
+            count++;
+            i++;
+        }   
+        else {
+            i++;
+        }
+    }
+    console.log(sixIncomplete) */
+}
+
+firstSixIncomplete();
