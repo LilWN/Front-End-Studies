@@ -8,6 +8,14 @@
     <title>Wilson Nguyen</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("RLjPqFCmWaC3BCRIn");
+        })();
+    </script>
 </head>
 
 <body>
@@ -72,23 +80,55 @@
         <div class="modal">
             <div class="modal__half modal__about">
                 <h3 class="modal__title modal__title--about">Heres a bit about me.</h3>
-                <h4 class="modal__sub-title modal__sub-title--about"></h4>
-                <p class="modal__para">I'm a 21 year old software Engineer Lorem ipsum dolor sit amet consectetur
+                <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
+                <p class="modal__para">I'm a 21 year old Australian <b class="orange">frontend software engineer</b>
+                    Lorem ipsum dolor sit amet consectetur
                     adipisicing elit. <br>Pariatur, praesentium exercitationem sint est unde ipsam cupiditate, sunt
                     porro consectetur accusamus temporibus ratione.</p>
                 <div class="modal__languages">
                     <figure class="modal__language">
-                        <img class="modal__language--img" src="https://symbols.getvecta.com/stencil_83/68_html5-icon.09e3da538e.svg" alt="">
+                        <img class="modal__language--img"
+                            src="https://symbols.getvecta.com/stencil_83/68_html5-icon.09e3da538e.svg" alt="">
+                        <span class="language__name">HTML</span>
                     </figure>
                     <figure class="modal__language">
-                        <img class="modal__language--img" src="https://symbols.getvecta.com/stencil_83/68_html5-icon.09e3da538e.svg" alt="">
+                        <img class="modal__language--img"
+                            src="https://symbols.getvecta.com/stencil_83/68_html5-icon.09e3da538e.svg" alt="">
+                        <span class="language__name">HTML</span>
                     </figure>
                     <figure class="modal__language">
-                        <img class="modal__language--img" src="https://symbols.getvecta.com/stencil_83/68_html5-icon.09e3da538e.svg" alt="">
+                        <img class="modal__language--img"
+                            src="https://symbols.getvecta.com/stencil_83/68_html5-icon.09e3da538e.svg" alt="">
+                        <span class="language__name">HTML</span>
                     </figure>
                 </div>
             </div>
-            <div class="modal__half modal__contact">Lets have a chat</div>
+            <div class="modal__half modal__contact">
+                <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
+                <h4 class="modal__sub-title modal__sub-title--contact">I'm currently open to new opportunities.</h4>
+                <form id="contact__form" onsubmit="contact(event)">
+                    <div class="form__item">
+                        <label class="form__item--label">Name</label>
+                        <input class="input" name="user_name" type="text" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Email</label>
+                        <input class="input" name="user_email" type="email" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Message</label>
+                        <textarea class="input" name="message" type="text" required></textarea>
+                    </div>
+                    <button id="contact__submit" class="form__submit">Send it my way</button>
+                </form>
+                <div class="modal__overlay modal__overlay--loading">
+                    <i class="fas fa-spinner"></i>
+                </div>
+                <div class="modal__overlay modal__overlay--success">
+                    Thanks for the message! Looking forward to speaking to you soon.
+                </div>
+            </div>
+            <i class="fas fa-times modal__exit click"></i>
         </div>
     </section>
     <section id="projects">
